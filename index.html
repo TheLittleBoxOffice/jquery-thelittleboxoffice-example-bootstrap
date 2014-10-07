@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JQuery TheLittleBoxOffice Plug Examples</title>
+	
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/handlebars/handlebars.runtime.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="testdata.js"></script>
+	<script src="../build/tmp/jquery-thelittleboxoffice.js"></script>
+
+	<link rel="stylesheet" href="example.css">
+	<link rel="stylesheet" href="../css/jquery.lbo.components.css">
+
+	<script>
+		$(function() {
+			$.fn.thelittleboxoffice.build({
+				query : 'limit=2;category_id=13',
+				target : $('.lboeventboard')
+			});
+			$.fn.thelittleboxoffice.build({
+				query : 'category_id=13,16;original=1;',
+				target : $('.lbocalendar'),
+				theme : 'list'
+			});
+			$.fn.thelittleboxoffice.listCategories({
+				target: $('.lbocategories')
+			});
+		});
+	</script>
+
+</head>
+
+<body id="home" class="no-touch">
+
+	<h1>JQuery TheLittleBoxOffice Plug Examples</h1>
+
+	<div class="column1">
+		<div class="lboeventboard"></div>
+	</div>
+	<div class="column2">
+		<div class="lbocalendar"></div>
+	</div>
+	<div class="lbocategories">
+
+	</div>
+</body>
+</html>

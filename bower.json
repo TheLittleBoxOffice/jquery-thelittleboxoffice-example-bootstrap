@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.2.0",
-    "jquery-thelittleboxoffice": "*"
+    "jquery-thelittleboxoffice": "*",
+    "handlebars": "~2.0.0"
   }
 }
