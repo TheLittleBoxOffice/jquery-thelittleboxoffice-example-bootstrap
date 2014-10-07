@@ -1,0 +1,17 @@
+{
+  "name": "jquery-thelittleboxoffice-example-bootstrap",
+  "version": "0.1.0",
+  "homepage": "https://github.com/TheLittleBoxOffice/jquery-thelittleboxoffice-example-bootstrap",
+  "authors": [
+    "glitcha <colin.piggott@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
