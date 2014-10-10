@@ -19,26 +19,30 @@
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
 	<script>
 		$(function() {
-			/*
+			
 			$.fn.thelittleboxoffice.build({
 				query : 'limit=1;category_id=13',
 				target : $('.jumbotron')
 			});
-			*/
+			
 			$.fn.thelittleboxoffice.monthView({
 				target : $('.month-view'),
 			});
 
-			// $.fn.thelittleboxoffice.build({
-			// 	query : 'category_id=13,16;original=1;',
-			// 	target : $('.lbocalendar'),
-			// 	theme : 'list'
-			// });
-			// $.fn.thelittleboxoffice.listCategories({
-			// 	target: $('.lbocategories')
-			// });
+			$.fn.thelittleboxoffice.build({
+				query : 'category_id=13,16;original=1;',
+				target : $('.comedy'),
+				theme : 'list'
+			});
+			$.fn.thelittleboxoffice.listCategories({
+				query : '',
+				target : $('.other'),
+				theme : 'list'
+			});
 		});
 	</script>
 
@@ -83,13 +87,20 @@
 		<div class="jumbotron"></div>
 	</div>
 
-	<div class="container row">
-		<div class="col-md-4"></div>
-		<div class="col-md-4"></div>
-		<div class="col-md-4">
-			<div class="month-view"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Comedy</h2>
+				<div class="comedy"></div>
+			</div>
+			<div class="col-md-4">
+				<h2>Other Stuff</h2>
+				<div class="other"></div>
+			</div>
+			<div class="col-md-4">
+				<div class="month-view"></div>
+			</div>
 		</div>
-		
 	</div>
 
 </body>

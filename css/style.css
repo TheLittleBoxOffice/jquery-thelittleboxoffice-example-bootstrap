@@ -1,2 +1,44 @@
+* {
+	font-family: "Lato";
+	color:rgb(102, 102, 102);
+}
+
 .lbo-billboard-item {}
 	.lbo-billboard-item .lbo-crop { width: 300px; float:left; margin-right: 15px;}
+
+.lbo-performances {	padding: 15px 0 0 0; }
+	.lbo-performances li { 
+		list-style: none;	
+		margin-bottom:2px;
+		position: relative;
+		background: #eee;
+	}
+	.lbo-performances li .lbo-image {
+		max-height: 180px;
+		overflow: hidden;
+	}
+	.lbo-performances li .lbo-image img { 
+		width:100%;
+		box-shadow:inset 0px 0px 0px 10px #f00;
+	}
+	.lbo-performances li .lbo-time {
+		position: absolute;
+		font-size: 20px;
+		right: 15px;
+		top: 15px;
+		background: rgba(0,0,0,0.7);
+		padding: 5px;
+	}
+	.lbo-performances li .lbo-time .lbo-start-month-day { color: #ffffff; }
+	.lbo-performances li .lbo-time .lbo-start-day { color: #ffffff;	}
+	.lbo-performances li .lbo-title {
+		font-size: 20px;
+		text-align: center;
+		line-height: 29px;
+		padding: 15px 5px;
+	}
+	.lbo-performances li .lbo-title a,
+	.lbo-performances li .lbo-title a:hover {
+		color:rgb(102, 102, 102);
+		text-decoration: none;
+	}
