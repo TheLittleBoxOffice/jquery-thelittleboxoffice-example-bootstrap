@@ -23,25 +23,20 @@
 
 	<script>
 		$(function() {
-			
 			$.fn.thelittleboxoffice.build({
 				query : 'limit=1;category_id=13',
 				target : $('.jumbotron')
 			});
-			
 			$.fn.thelittleboxoffice.monthView({
 				target : $('.month-view'),
 			});
-
 			$.fn.thelittleboxoffice.build({
-				query : 'category_id=13,16;original=1;',
-				target : $('.comedy'),
-				theme : 'list'
+				query : 'category_id=13;original=1',
+				target : $('.comedy')
 			});
-			$.fn.thelittleboxoffice.listCategories({
-				query : '',
-				target : $('.other'),
-				theme : 'list'
+			$.fn.thelittleboxoffice.build({
+				query : 'original=1',
+				target : $('.other')
 			});
 		});
 	</script>
